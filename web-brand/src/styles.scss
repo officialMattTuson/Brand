@@ -1,6 +1,45 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #001F3F;
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --midnight-blue: #0a1929;
+  --deep-ocean: #1a2c42;
+  --wave-blue: #2e4c6d;
+  --shallow-water: #3e7cb1;
+  --surface-ripple: #81a4cd;
+  --foam-white: #f0f4f8;
+  --on-midnight-blue: #29ce45;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  color: var(--foam-white);
+  line-height: 1.2;
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(
+    450px at var(--mouse-x) var(--mouse-y),
+    rgba(62, 118, 182, 0.3) 0%,
+    rgba(10, 25, 41, 0.95) 50%,
+    rgba(10, 25, 41, 1) 100%
+  );
+  background-color: var(--midnight-blue);
+  transition: background 0.05s ease-out;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+

@@ -1,22 +1,33 @@
-.navbar {
+.nav-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.nav-bubble {
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-bubble:hover {
+  transform: scale(1.05);
+}
+
+nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #001F3F;
-  color: white;
-  padding: 15px;
+  gap: 1rem;
 }
-ul {
-  display: flex;
-  list-style: none;
-}
-li {
-  margin: 0 10px;
-}
-a {
-  color: white;
+
+.nav-item {
+  color: var(--foam-white);
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
-a:hover {
-  text-decoration: underline;
+
+.nav-item:hover {
+  background: var(--wave-blue);
+  transform: translateY(-2px);
 }
