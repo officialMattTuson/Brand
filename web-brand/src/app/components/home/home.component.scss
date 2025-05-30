@@ -10,10 +10,11 @@
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   color: var(--surface-ripple);
   opacity: 0.6;
+  padding-block: 0.5rem;
 }
 
 .subtitle {
@@ -46,11 +47,14 @@
 }
 
 .name {
+  font-size: 7rem;
   color: var(--surface-ripple);
   opacity: 1;
 }
 
 .summary {
+  font-size: 1.5rem;
+
   color: var(--surface-ripple);
   opacity: 0.6;
 
