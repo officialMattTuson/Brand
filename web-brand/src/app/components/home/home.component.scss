@@ -2,65 +2,70 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-}
+  justify-content: center;
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
+  &::selection {
+    background-color: var(--surface-ripple-highlight);
+    color: var(--on-midnight-blue);
+  }
 
-.heading {
-  font-size: 5rem;
-  font-weight: 700;
-  color: var(--surface-ripple);
-  opacity: 0.6;
-  padding-block: 0.5rem;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.subtitle {
-  font-size: 1rem;
-  color: var(--on-midnight-blue);
-  font-family: "Oxygen Mono", monospace;
-}
+  &__name {
+    font-weight: 700;
+    font-size: 7rem;
+    color: var(--surface-ripple);
+    opacity: 1;
+  }
 
-.typewriter-text {
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--on-midnight-blue);
-  display: inline-block;
-}
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--surface-ripple-light);
+    padding-block: 0.5rem;
+  }
 
-.cursor {
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--on-midnight-blue);
-  display: inline-block;
-  position: relative;
-  left: 0;
-  animation: blink 0.8s infinite;
+  &__subtitle {
+    font-size: 1.5rem;
+    color: var(--on-midnight-blue);
+    font-family: "Oxygen Mono", monospace;
+  }
+
+  &__typewriter {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--on-midnight-blue);
+    display: inline-block;
+  }
+
+  &__cursor {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--on-midnight-blue);
+    display: inline-block;
+    position: relative;
+    left: 0;
+    animation: blink 0.8s infinite;
+  }
+
+  &__summary {
+    font-size: 1.5rem;
+    color: var(--surface-ripple);
+    opacity: 0.6;
+
+    &-container {
+      line-height: 1.5rem;
+      margin-block-start: 1.5rem;
+      max-width: 600px;
+    }
+  }
 }
 
 .hero-content {
   padding: 2rem;
   max-width: 600px;
   font-size: 1.2rem;
-}
-
-.name {
-  font-size: 7rem;
-  color: var(--surface-ripple);
-  opacity: 1;
-}
-
-.summary {
-  font-size: 1.5rem;
-
-  color: var(--surface-ripple);
-  opacity: 0.6;
-
-  &-container {
-    line-height: 1.5rem;
-    margin-block-start: 1.5rem;
-    max-width: 600px;
-  }
 }
