@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 
   &::selection {
     background-color: var(--surface-ripple-highlight);
@@ -68,4 +69,155 @@
   padding: 2rem;
   max-width: 600px;
   font-size: 1.2rem;
+}
+
+.about {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: var(--surface-container);
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  &__skills {
+    margin-top: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  &__item {
+    padding: 1rem;
+    background-color: var(--surface-container-high);
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+}
+
+.projects {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
+.project-card {
+  background-color: var(--surface-container);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  &__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__tag {
+    background-color: var(--surface-container-high);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: var(--surface-container);
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    color: var(--surface-ripple-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--surface-ripple-light);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--surface-ripple-light);
+      color: var(--surface-container);
+    }
+  }
 }
