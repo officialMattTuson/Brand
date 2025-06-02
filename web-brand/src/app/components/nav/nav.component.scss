@@ -34,11 +34,7 @@
     padding: 0.5rem 0;
     position: relative;
     transition: color 0.3s ease;
-
-    &:hover,
-    &--active {
-      color: var(--on-midnight-blue);
-    }
+    cursor: pointer;
 
     &:after {
       content: "";
@@ -51,13 +47,16 @@
       transition: width 0.3s ease;
     }
 
-    &:hover:after,
-    &--active:after {
+    &:hover:after {
       width: 100%;
     }
 
-    &:hover {
-      cursor: pointer;
+    &--active {
+      color: var(--on-midnight-blue);
+
+      &:after {
+        width: 100%;
+      }
     }
   }
 }
