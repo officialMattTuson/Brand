@@ -1,17 +1,19 @@
-<div class="nav">
-  <h1 class="nav__title">Matthew Tuson</h1>
-  <ul class="nav__list">
-    <li class="nav__item">
-      <a (click)="scrollToSection('home')" class="nav__link" [class.nav__link--active]="activeSection === 'home'">Home</a>
-    </li>
-    <li class="nav__item">
-      <a (click)="scrollToSection('about')" class="nav__link" [class.nav__link--active]="activeSection === 'about'">About</a>
-    </li>
-    <li class="nav__item">
-      <a (click)="scrollToSection('projects')" class="nav__link" [class.nav__link--active]="activeSection === 'projects'">Projects</a>
-    </li>
-    <li class="nav__item">
-      <a (click)="scrollToSection('contact')" class="nav__link" [class.nav__link--active]="activeSection === 'contact'">Contact</a>
-    </li>
-  </ul>
+<div class="nav__container">
+  <div class="nav">
+    <h1 class="nav__title">Matthew Tuson</h1>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a (click)="scrollToSection('home')" class="nav__link" [class.nav__link--active]="activeSection === 'home'">Home</a>
+      </li>
+      <li class="nav__item">
+        <a (click)="scrollToSection('about')" class="nav__link" [class.nav__link--active]="activeSection === 'about'">About</a>
+      </li>
+      <li class="nav__item">
+        <a (click)="scrollToSection('projects')" class="nav__link" [class.nav__link--active]="activeSection === 'projects'">Projects</a>
+      </li>
+      <li class="nav__item">
+        <a (click)="scrollToSection('contact')" class="nav__link" [class.nav__link--active]="activeSection === 'contact'">Contact</a>
+      </li>
+    </ul>
+  </div>
 </div>
